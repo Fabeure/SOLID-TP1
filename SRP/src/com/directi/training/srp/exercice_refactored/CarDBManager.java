@@ -19,6 +19,10 @@ public class CarDBManager
         return null;
     }
 
+    public static List<Car> getAllCars(){
+        return _carsDb;
+    }
+
     public boolean deleteCarFromDb(final String carId){
         // not implemented yet, but eventually will go in this file
     }

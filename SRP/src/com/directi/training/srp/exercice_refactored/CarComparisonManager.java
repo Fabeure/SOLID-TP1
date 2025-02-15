@@ -1,14 +1,13 @@
 package com.directi.training.srp.exercise;
 
-import java.util.Arrays;
 import java.util.List;
 
 public class CarComparisonManager
 {
-    public Car getBestCar()
+    public Car getBestCar(List<Car> cars)
     {
         Car bestCar = null;
-        for (Car car : _carsDb) {
+        for (Car car : cars) {
             if (bestCar == null || car.getModel().compareTo(bestCar.getModel()) > 0) {
                 bestCar = car;
             }
